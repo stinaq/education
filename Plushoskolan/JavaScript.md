@@ -2,7 +2,7 @@ JavaScript
 ==========
 Typ av språk
 -----------
-Programmeringsspråk som till största del används i webbläsare för att göra anrop efter resurser och förändra hur en sida ser ut. Har inget med Java att göra alls, det döptes bara till det för att Java var populärt då. Nu för tiden finns det mer och mer på servrar också.    
+Programmeringsspråk som till största del används i webbläsare för att göra anrop efter resurser och förändra hur en sida ser ut. Har inget med Java att göra alls, det döptes bara till det för att Java var populärt då. Nu för tiden finns det mer och mer på servrar också.
 Till skillnad från exempelvis php och Java/C# så behöver det inte köras från en server, utan kan skrivas direkt i browsern. Det innebär också att det inte kan kontakta en databas själv, utan behöver något emellan för att göra det. Vanligt då är att man använder ett REST-api.  
 Funktionsscopat, vilket innebär att variabler finns inne i den funktionen som de är deklarerade i.  
 
@@ -15,7 +15,24 @@ Eftersom det inte finns ett typsystem så kan det lätt bli fel. Du behöver int
 Hur lägger man upp ett skript?
 ---------------------------
 Filerna läses uppifrån och ner, därför måste variabler och funktioner som används deklareras ovanför användningspunkten. 
-Det finns i varje webbläsare ett globalt scope som heter window där man kan ”fästa” variabler. Men det är en mycket dålig idé! Då kan man råka krocka med ett annat skript och ditt kommer inte längre att fungera som det ska. Därför ska man alltid innesluta sitt skript i vad som kallas en anonym funktion. Det ser ut så här:
+Det finns i varje webbläsare ett globalt scope som heter window där man kan ”fästa” variabler. Men det är en mycket dålig idé! Då kan man råka krocka med ett annat skript och ditt kommer inte längre att fungera som det ska. Därför ska man alltid innesluta sitt skript i vad som kallas en anonym funktion. Det är en så kallad Immediately-invoked function. Det ser ut så här:
+
+```
+(function (window, $) {
+    "use strict";
+    var a = 'hej';
+    
+    // Här inne skriver du din kod
+    
+    
+})(window, jQuery);
+``` 
+
+Om man alltid gör så här i sina skript så följer man god standard och undviker att det man gör påverkar andra skript, eller att ens egna skript blir påverkade av vad andra kan ha gjort. Genom att skriva "use strict" så väljer man att aktivt använda en syntax som är lite mer strikt och bättre anpassad för framtida versioner av JavaScript.
+
+
 Typsystem
+
+
 Prototyper/”Klasser”/Classify
 Clojures
