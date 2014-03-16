@@ -1,12 +1,26 @@
 (function (window, $) {
     "use strict";
 
-    var buildQuestionMarkup = function (question) {
+    var buildQuestionMarkup = function (questionItem) {
         return [
             '<div>',
                 '<p>',
-                    question.question,
+                    questionItem.question,
                 '</p>',
+                '<ul>',
+                    '<li>',
+                        questionItem.a,
+                    '</li>',
+                    '<li>',
+                        questionItem.b,
+                    '</li>',
+                    '<li>',
+                        questionItem.c,
+                    '</li>',
+                    '<li>',
+                        questionItem.d,
+                    '</li>',
+                '</ul>',
             '</div>'
         ].join('');
     };
@@ -25,12 +39,12 @@
     };
 
     var getData = function() {
-    	$.ajax({
-    		url: 'data.json',
-    		success: success,
-    		error: console.log,
-    		dataType: 'json'
-    	});
+        $.ajax({
+           url: 'data.json',
+           success: success,
+           error: console.log,
+           dataType: 'json'
+        });
     };
     getData();
 })(window, jQuery);
