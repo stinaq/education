@@ -29,12 +29,18 @@
       '<div>',
         '<input type="submit" value="Check my answer">',
       '</div>',
+      '<p id="result-message">',
+      '</p>',
     '</div>'
     ].join('');
   };
 
+  var renderResult = function (questionElement, result) {
+    questionElement.find('#result-message').text(result).slideDown();
+  };
+
   var checkAnswer = function (index, answers) {
-    alert('Your answer was ' + answers + ' and the correct answers were ' + quizData[index].answer);
+    return answers.compare(quizData[index].answer);
   };
 
   var addEvents = function (quizWrapper) {
@@ -44,7 +50,7 @@
       var answers = $.map(questionElement.find('input[type=checkbox]:checked'), function (inputElement, key) {
         return $(inputElement).val();
       });
-      checkAnswer(questionIndex, answers);
+      renderResult(questionElement, checkAnswer(questionIndex, answers));
     });
   };
 
