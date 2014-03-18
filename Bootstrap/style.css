@@ -1,0 +1,11 @@
+[class*="col-"] {
+	background: #E4BFF2;
+	border: 1px solid #C186D9;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	min-height: 200px;
+}
+
+.seperator {
+	height: 40px;
+}
