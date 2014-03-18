@@ -40,7 +40,7 @@ I JavaScript är alla saker man skapar objekt. Man kan "fästa" properties på l
 
 Obejktorientering vs funktionsorientering
 -----------------------------------------
-Till skillnad från till exempel Java eller de senare varianterna av PHP så är JavaScript inte anpassat för objektorientering. Det finns inte arv eller klasser. Det går att härma, men är kanske inte alltid den bästa vägen att gå. Det viktigaste att ta  med sig från objektorienteringen är att skapa komponenter som är återanvändningsbara och så flexibla som är rimligt. 
+Till skillnad från till exempel Java eller de senare varianterna av PHP så är JavaScript inte anpassat för objektorientering. Det finns inte arv eller klasser. Det går att härma, men är kanske inte alltid den bästa vägen att gå. Det viktigaste att ta med sig från objektorienteringen är att skapa komponenter som är återanvändningsbara och så flexibla som är rimligt. 
 
 
 Closures
