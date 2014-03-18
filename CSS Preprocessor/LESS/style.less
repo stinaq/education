@@ -1,0 +1,203 @@
+/*VARIABLES*/
+/*Variables are defined by an @-sign*/
+@sky-blue:              #27b9f1;
+@padding:               10px;
+
+/*When defining a variable more than once, the last definition is used, IN THE CURRENT SCOPE*/
+/*They can also be declared after they are used. They are lazy-loaded = read when used*/
+@var: 0em;
+.class1 {
+  @var: 1em;
+  .class {
+    @var: 2em;
+    margin: @var;
+    @var: 3em;
+  }
+  margin: @var;
+}
+
+
+
+
+
+
+/*MIXINS*/
+/*A way to DRY, reusing entire sets of rules in another rule, shortens your code!*/
+.random-borders{
+    border-top: 1px solid @sky-blue;
+    border-bottom: 10px dotted @some-crazy-color;
+    border-left: @var solid red;
+}
+/*The above class is used inside another!*/
+.some-class-that-want-borders{
+    background: pink;
+    .random-borders;
+}
+
+
+
+
+
+
+
+/*PARAMETRIC MIXINS*/
+/*By putting variables when declaring the mixin, you can provide different values when using the mixin*/
+.gradient-maker (@color1; @color2; @color3; @color4) {
+    background: @color1; /* Old browsers */
+    background: -moz-linear-gradient(top, @color1 0%, @color2 50%, @color3 51%, @color4 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@color1), color-stop(50%,@color2), color-stop(51%,@color3), color-stop(100%,@color4)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @color1 0%,@color2 50%,@color3 51%,@color4 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @color1 0%,@color2 50%,@color3 51%,@color4 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @color1 0%,@color2 50%,@color3 51%,@color4 100%); /* IE10+ */
+    background: linear-gradient(to bottom, @color1 0%,@color2 50%,@color3 51%,@color4 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color1', endColorstr='@color4',GradientType=0 ); /* IE6-9 */
+}
+
+/*Trying it out!!*/
+.menu-item{
+    height: 100px;
+    width: 300px;
+    /*Using the mixin, with values*/
+    .gradient-maker(#efc5ca, #d24b5a, #ba2737, #f18e99);
+}
+
+/*Mixins can also have default values, if you don't always want to specify*/
+.border-radius (@radius: 10px) {
+    border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.test1{
+    border: 10px solid @sky-blue;
+    .border-radius;
+    .to-show;
+}
+
+.test2{
+    border: 15px solid @sky-blue;
+    .border-radius(80px);
+    .to-show;
+}
+
+
+
+
+
+
+
+
+
+
+/*TINY BIT ABOUT IF-STATEMENTS AND OVERLOADING*/
+/*By using different number of inparameters, or different values on inparameters, the mixin can behave differently*/
+.mixin (@a; @b: 0) when (isnumber(@b)) { /*some CSS*/ }
+.mixin (@a; @b: black) when (iscolor(@b)) { /*some CSS*/ }
+
+body {
+    color: @some-crazy-color;
+    .mixin(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*NESTING*/
+/*Instead of creating multiple rules to target increasingly specific elements, like this:*/
+#my-div{
+    background: yellow;
+}
+#my-div .my-class{
+    background: black;
+}
+#my-div .my-class:hover{
+    background: blue;
+}
+#my-div.some-other-class{
+    background: red;
+}
+#my-div li>a{
+    background: purple;
+}
+
+/*In less you can write this:*/
+#my-div {
+    background: yellow;
+    .my-class {
+        background: black;
+        &:hover {
+            background: blue;
+        }
+    }
+    &.some-other-class {
+        background: red;
+    }
+    li>a{
+        background: purple;
+    }
+}
+/*The ampersand-sign is to indicate parent-selector instead of decendant*/
+/*The crocodile is used as usual, as is the +*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*FUNCTIONS*/
+/*built-in functions that can do stuff, like math, transform colors and so on!*/
+@dark-sky-blue:         lighten(@sky-blue, 20%);
+@cloudy-sky:            desaturate(@sky-blue, 80%);
+@mixed-grass:           mix(#0000ff, #f6ff00);
+@some-crazy-color:      multiply(@dark-sky-blue, @mixed-grass);
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*IMPORTING*/
+/*Can import other less-files, or css-files*/
+/*css-files has to be placed at the top of the document, less can be included anywhere*/
+@import "to-import.less";
+
+
+/*MORE ON:*/
+/*http://lesscss.org/#docs*/
+
+
+
+
+
+.to-show{
+    height: 100px;
+    width: 500px;
+    margin: 20px auto 20px auto;
+}
+
+
+
+
+
