@@ -11,16 +11,17 @@
 /*MIXINS*/
 /*A way to DRY, reusing entire sets of rules in another rule, shortens your code!*/
 .random-borders {
-  border-top: 1px solid #27b9f1;
-  border-bottom: 10px dotted #416c7c;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 10px dotted #7b8080;
   border-left: 0em solid #ff0000;
 }
 /*The above class is used inside another!*/
 .some-class-that-want-borders {
   background: pink;
-  border-top: 1px solid #27b9f1;
-  border-bottom: 10px dotted #416c7c;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 10px dotted #7b8080;
   border-left: 0em solid #ff0000;
+  border-left: 100px;
 }
 /*PARAMETRIC MIXINS*/
 /*By putting variables when declaring the mixin, you can provide different values when using the mixin*/
@@ -57,7 +58,7 @@
 }
 /*Mixins can also have default values, if you don't always want to specify*/
 .test1 {
-  border: 10px solid #27b9f1;
+  border: 10px solid #eeeeee;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -66,7 +67,7 @@
   margin: 20px auto 20px auto;
 }
 .test2 {
-  border: 15px solid #27b9f1;
+  border: 15px solid #eeeeee;
   border-radius: 80px;
   -moz-border-radius: 80px;
   -webkit-border-radius: 80px;
@@ -74,10 +75,33 @@
   width: 500px;
   margin: 20px auto 20px auto;
 }
+a {
+  color: #eeeeee;
+}
+a:hover {
+  color: #ff3333;
+  text-decoration: underline;
+}
+a.link {
+  color: red;
+}
+a.link:hover {
+  color: #ff9cce;
+  text-decoration: underline;
+}
+a p {
+  background: green;
+}
+a p #hej {
+  color: red;
+}
+.class {
+  color: #f0ecec;
+}
 /*TINY BIT ABOUT IF-STATEMENTS AND OVERLOADING*/
 /*By using different number of inparameters, or different values on inparameters, the mixin can behave differently*/
 body {
-  color: #416c7c;
+  color: #7b8080;
   /*some CSS*/
 }
 /*NESTING*/

@@ -1,6 +1,6 @@
 /*VARIABLES*/
 /*Variables are defined by an @-sign*/
-@sky-blue:              #27b9f1;
+@sky-blue:              #eee;
 @padding:               10px;
 
 /*When defining a variable more than once, the last definition is used, IN THE CURRENT SCOPE*/
@@ -32,6 +32,7 @@
 .some-class-that-want-borders{
     background: pink;
     .random-borders;
+    border-left: 100px;
 }
 
 
@@ -80,6 +81,34 @@
     .to-show;
 }
 
+.to-lighten (@my-color) {
+  color: lighten(@my-color,10);
+  text-decoration: underline;;
+}
+
+a {
+  color: @sky-blue;
+  &:hover {
+   .to-lighten(red);
+  }
+  &.link {
+    color: red;
+    &:hover {
+      .to-lighten(hotpink);
+    }
+  }
+  p {
+    background: green;
+    #hej{
+      color: red;
+    }
+  }
+}
+
+
+.class {
+  color: saturate(@sky-blue,10);
+}
 
 
 
