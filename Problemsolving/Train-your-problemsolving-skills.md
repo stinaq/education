@@ -17,8 +17,8 @@ Aunt Stina's cats
 -----------------
 Aunt Stina has a huge number of cats and she often emails you about them. You need to be able to impress her in order to get into her will (she lives in a mansion along with all her cats and has no direct descendants). You have a large file of all her emails combined. She always ends them with "Love Stina" and then some information about the births and deaths of cats. And they always start with "Hello young rascal!". Here's the latest example she sent:    
 
-> Hello you rascal!
-> Today I dropped one of my pure gold cups, it made a huge dent in the mahogony floor, very irritating. Also, the butler insists that Mr Whiskers was to blame, how silly. 
+> Hello you rascal!    
+> Today I dropped one of my pure gold cups, it made a huge dent in the mahogony floor, very irritating. Also, the butler insists that Mr Whiskers was to blame, how silly.     
 > Love Stina    
 > Born: Pebbles, grey; Mr Purrlosconi, black
 > Died: Apple, silver
