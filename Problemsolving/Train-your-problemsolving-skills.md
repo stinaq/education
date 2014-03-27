@@ -25,6 +25,6 @@ Aunt Stina has a huge number of cats and she often emails you about them. You ne
 > Born: Pebbles, grey; Mr Purrlosconi, black
 > Died: Apple, silver
 
-What you need to do is create a database of all the cats. It should contain information about the name, bitrh and color of the cat, but if a cat dies it should no longer stay in the database.
+What you need to do is create a database of all the cats. It should contain information about the name and color of the cat, but if a cat dies it should no longer stay in the database.
 
 Source: Eloquent JavaScript, by Marjin Haverbeke
