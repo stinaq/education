@@ -23,8 +23,8 @@ Open cmd and travel to the project, and in to AngularJS/Basic-seed
 
 __Install dependencies__  
 run:  
-```npm install  
-bower install ```
+```npm install```
+```bower install ```
 
 __Start server__
 ```grunt serve```
