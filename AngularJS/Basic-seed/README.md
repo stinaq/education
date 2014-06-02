@@ -26,5 +26,5 @@ run:
 ```npm install```  
 ```bower install ```
 
-__Start server__
+__Start server__  
 ```grunt serve```
