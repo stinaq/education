@@ -17,6 +17,11 @@ And then:
 __Install Grunt taskrunner and Bower__  
 ``` npm install -g grunt-cli bower ```
 
+__Install Git__
+```cinst git```
+
+Then restart you cmd
+
 __Download project from GitHub__  
 Go to [the project](https://github.com/stinaq/education) and download zip, or clone if you have a GitHub account  
 Open cmd and travel to the project, and in to AngularJS/Basic-seed
