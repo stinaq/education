@@ -1,18 +1,4 @@
 <div class="row marketing">
-  <h1>{{ test }}</h1>
-  <input type="text" ng-model="test">
-</div>
-
-<input type="search" class="form-control" ng-model="searchFilter" placeholder="filter groups..." /><br>
-<input type="search" class="form-control" ng-model="searchFilter.animal" placeholder="filter groups by animal..." />
-<br>
-<table class="table table-striped">
-  <tr ng-repeat="group in animalGroups | filter:searchFilter">
-    <td>{{ group.groupName }} of</td>
-    <td>{{ group.animal }}</td>
-  </tr>
-</table>
-
-<div class="footer">
-  <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+  <h1>{{ message }}</h1>
+  <input type="text" ng-model="message" class="form-control" >
 </div>
