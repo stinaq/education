@@ -1,0 +1,55 @@
+[
+  {
+    "animal":"apes",
+    "groupName": "shrewdness"
+  },
+  {
+    "animal":"asses",
+    "groupName":"pace"
+  },
+  {
+    "animal":"badgers",
+    "groupName":"cete"
+  },
+  {
+    "animal":"bats",
+    "groupName":"colony"
+  },
+  {
+    "animal":"bears",
+    "groupName":"sleuth"
+  },
+  {
+    "animal":"buffalo",
+    "groupName":"gang"
+  },
+  {
+    "animal":"cats",
+    "groupName":"clowder"
+  },
+  {
+    "animal":"cattle",
+    "groupName":"drove"
+  },
+  {
+    "animal":"deer",
+    "groupName":"herd"
+  },
+  {
+    "animal":"dogs",
+    "groupName":"mute"
+  },
+  {
+    "animal":"elephants",
+    "groupName":"herd"
+  },
+  {
+    "animal":"elk",
+    "groupName":"gang"
+  },
+  {
+    "animal":"ferrets",
+    "groupName":"business"
+
+  }
+]
