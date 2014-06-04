@@ -1,0 +1,25 @@
+<div class="row marketing">
+  <h1>Trying out a custom database service</h1>
+  <p>
+    In the world of Angular a service is a singleton object that carries out a specific task. A service is, among other things, the M in MVM, it contains business logic but has no connection to the view. Examples of commonly used services are:
+  </p>
+  <ul>
+    <li>http, handles http requests</li>
+    <li>location, handles what goes on in the location area</li>
+  </ul>
+  <p>
+    And some examples of a custom made service:
+
+  </p>
+  <ul>
+    <li>Databaseconnection</li>
+    <li>Något som sparar till local storage</li>
+  </ul>
+</div>
+
+<table class="table table-striped">
+  <tr ng-repeat="group in animalGroups | filter:searchFilter">
+    <td>{{ group.groupName }} of</td>
+    <td>{{ group.animal }}</td>
+  </tr>
+</table>
