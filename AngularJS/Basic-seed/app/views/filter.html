@@ -1,0 +1,14 @@
+<div class="row marketing">
+  <h1>Trying out filters</h1>
+</div>
+
+<h3>By search input</h3>
+<input type="search" class="form-control" ng-model="searchFilter" placeholder="filter groups..." /><br>
+<input type="search" class="form-control" ng-model="searchFilter.animal" placeholder="filter groups by animal..." />
+<br>
+<table class="table table-striped">
+  <tr ng-repeat="group in animalGroups | filter:searchFilter">
+    <td>{{ group.groupName }} of</td>
+    <td>{{ group.animal }}</td>
+  </tr>
+</table>
