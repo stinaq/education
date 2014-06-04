@@ -21,6 +21,14 @@ angular
         templateUrl: 'views/filter.html',
         controller: 'MainCtrl'
       })
+      .when('/directive', {
+        templateUrl: 'views/directive.html',
+        controller: 'MainCtrl'
+      })
+      .when('/directiveLazyLoading', {
+        templateUrl: 'views/directiveLazyLoading.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
