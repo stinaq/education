@@ -7,11 +7,6 @@ angular.module('basicSeedApp')
     $scope.animalGroups;
     $scope.load = false;
 
-    $scope.setToTrue = function () {
-      $scope.load = true;
-      console.log($scope.load);
-    };
-
     dbStubService.GET().then(function (data) {
       $scope.animalGroups = data.data;
     }, function (data) {
