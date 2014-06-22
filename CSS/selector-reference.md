@@ -124,13 +124,14 @@ As HTML
     	</div>
     </div>
 
+
 Sibling selector
 ----------------
-**element + element**
+**element ~ element**
 
-Selects all elements that are placed immediately after another elements, at the same level
+Selects all elements that are placed after another elements, at the same level
 
-    .all-inputs + input {
+    .all-inputs ~ input {
     	font-size: 24px;
     }
 
@@ -139,3 +140,4 @@ As HTML
     <h1 class="all-inputs">
     <input type="text">
     <input type="button">
+
