@@ -1,6 +1,14 @@
 CSS selector reference
 ======================
 
+The following are the different type of HTML-elements possible to select with CSS
+
+Everything-selector
+------------------
+Selects everything
+
+    *
+
 Element selector
 --------------
 Selects all elements of a certain type, for example:
@@ -13,30 +21,61 @@ Selects all elements of a certain type, for example:
     ul
     li
 
-/*ID-SELECTOR*/
-/*Selects the element with id="second-paragraph"*/
-/*I use the ID-selector for namespacing, meaning that I surround areas in my markup with ID:s to make sure that my selectors hits exactly the way I want them to*/
-#navigation-area {
-background-color: gray;
-}
- 
-/*CLASS SELECTOR*/
-/*Selects all elements with class="red-and-bold"*/
-.red-and-bold{
-color: red;
-font-weight: bold;
-}
- 
-/*ELEMENT SELECTOR*/
-/*Selects all <h1> elements*/
-h1{
-text-decoration: underline;
-}
-/*ELEMENT, ELEMENT SELECTOR*/
-/*selects all <h3> and all <h5> elements */
-h3, h5{
-font-family: Arial, sans-serif;
-}
+Pseudo-elements
+---------------
+Pseudo elements are elements in the HTML, certain parts of the document
+
+    ::after
+    ::before
+    ::first-line
+    ::selection
+
+Attribute selector
+------------------
+Select an element based on an attribute of the HTML element. Here you can select a specific type of input element, a checkbox if it is checked, for example. Here you can also pattern matching to for example select all elements where the ```src``` starts with ```https```
+
+    [type="button"]
+    [src^="https"]
+
+Class selector
+--------------
+Selects all elements with a specific class
+
+    .red-and-bold {
+       color: red;
+       font-weight: bold;
+    }
+
+Pseudo class
+------------
+Pseudo classes select elements in a certain state, such as a link when it's hovered over.
+
+   :link
+   :hover
+   :focus
+   :first-child
+   :nth-child
+   :nth-of-type
+   :target
+   :checked
+   :enabled
+   :disabled
+
+ID-selector
+----------
+Selects the element with a specific ID
+
+    #navigation-area {
+        background-color: gray;
+    }
+
+
+
+
+Combining selectors to specify even more
+========================================
+
+
 /*ELEMENT ELEMENT SELECTOR, DECENDANT SELECTOR */
 /*Selects all <li> elements inside <ul> elements*/
 ul li{
