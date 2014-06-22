@@ -1,7 +1,18 @@
 CSS selector reference
 ======================
 
-/*CSS SELECTORS AND HOW TO USE THEM CLEVERLY IN LESS*/
+Element selector
+--------------
+Selects all elements of a certain type, for example:
+    
+    p
+    div
+    h1
+    input
+    html
+    ul
+    li
+
 /*ID-SELECTOR*/
 /*Selects the element with id="second-paragraph"*/
 /*I use the ID-selector for namespacing, meaning that I surround areas in my markup with ID:s to make sure that my selectors hits exactly the way I want them to*/
