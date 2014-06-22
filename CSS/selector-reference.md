@@ -37,6 +37,11 @@ Select an element based on an attribute of the HTML element. Here you can select
     [type="button"]
     [src^="https"]
 
+As HTML:
+
+    <input type="button">
+    <img src="https://google.se/an-image.jpg">
+
 Class selector
 --------------
 Selects all elements with a specific class
@@ -46,20 +51,24 @@ Selects all elements with a specific class
        font-weight: bold;
     }
 
+As HTML:
+
+    <p class="red-and-bold"></p>
+
 Pseudo class
 ------------
 Pseudo classes select elements in a certain state, such as a link when it's hovered over.
 
-   :link
-   :hover
-   :focus
-   :first-child
-   :nth-child
-   :nth-of-type
-   :target
-   :checked
-   :enabled
-   :disabled
+    :link
+    :hover
+    :focus
+    :first-child
+    :nth-child
+    :nth-of-type
+    :target
+    :checked
+    :enabled
+    :disabled
 
 ID-selector
 ----------
@@ -69,12 +78,32 @@ Selects the element with a specific ID
         background-color: gray;
     }
 
+As HTML:
+
+    <div id="navigation-area"></div>
+
 
 
 
 Combining selectors to specify even more
 ========================================
 
+All the different type of selectors can be compined to make sure you get the look you want
+
+Decendant selector
+-----------------
+By writing two selectors after each other, it is a decsendant selector. It means that the selector to the right is a descendant to the left. It is a descending HTML element.
+
+    div .pink-text {
+    	color: pink;
+    }
+
+As HTML:
+
+    <div>
+    	<p class="pink-text">Text</p>
+    	<p class="red-text">Text</p>
+    </div>
 
 /*ELEMENT ELEMENT SELECTOR, DECENDANT SELECTOR */
 /*Selects all <li> elements inside <ul> elements*/
