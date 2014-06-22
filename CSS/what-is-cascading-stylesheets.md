@@ -10,6 +10,6 @@ The styling **cascades**, meaning that style rules can come from multiple places
 
 There are 3 ways to write your CSS, and they are ordered here by the strongest first.
 
-1 **Inline style**. This means writing the styling directly in the HTML element. This will always win over the following two ways, but is strongly discouraged, since it is very hard to maintain
-2 **Internal stylesheet**.
-3 **External stylesheet**.
+1 **Inline style**. This means writing the styling directly in the HTML element. This will always win over the following two ways, but is strongly discouraged, since it is very hard to maintain 
+2 **Internal stylesheet**. 
+3 **External stylesheet**. 
