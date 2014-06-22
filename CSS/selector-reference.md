@@ -95,14 +95,14 @@ Decendant selector
 By writing two selectors after each other, it is a decsendant selector. It means that the selector to the right is a descendant to the left. It is a descending HTML element.
 
     div .pink-text {
-    	color: pink;
+        color: pink;
     }
 
 As HTML:
 
     <div>
-    	<p class="pink-text">This text will be pink</p>
-    	<p class="red-text">This will not</p>
+        <p class="pink-text">This text will be pink</p>
+        <p class="red-text">This will not</p>
     </div>
 
 Child selector
@@ -112,16 +112,16 @@ Child selector
 Selects all elements that direct descendant to an element, ergo a child. In other words, it only looks one level down the markup structure, no deeper. So if there was another unordered list nested deeper, the list item children of it will not be targeted by this selector.
 
     .navigation > h1 {
-    	margin: 40px;
+        margin: 40px;
     }
 
 As HTML
 
     <div class="nevigation">
-    	<h1>Item level 1>
-    	<div>
-    		<h1>Item level 2</h1>
-    	</div>
+        <h1>Item level 1>
+        <div>
+            <h1>Item level 2</h1>
+        </div>
     </div>
 
 
@@ -132,7 +132,27 @@ Sibling selector
 Selects all elements that are placed after another elements, at the same level
 
     .all-inputs ~ input {
-    	font-size: 24px;
+        font-size: 24px;
+    }
+
+As HTML
+    
+        <h1 class="all-inputs">
+        <input type="text">
+        <input type="button">
+        <span>
+            <input type="text">
+        </span>
+
+
+Next sibling selector
+---------------------
+**element + element**
+
+Selects all elements that are placed IMMEDIATELY after another elements, at the same level
+
+    .all-inputs ~ input {
+        font-size: 24px;
     }
 
 As HTML
@@ -140,4 +160,3 @@ As HTML
     <h1 class="all-inputs">
     <input type="text">
     <input type="button">
-
