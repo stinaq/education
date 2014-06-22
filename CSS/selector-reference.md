@@ -83,8 +83,6 @@ As HTML:
     <div id="navigation-area"></div>
 
 
-
-
 Combining selectors to specify even more
 ========================================
 
@@ -101,8 +99,23 @@ By writing two selectors after each other, it is a decsendant selector. It means
 As HTML:
 
     <div>
-    	<p class="pink-text">Text</p>
-    	<p class="red-text">Text</p>
+    	<p class="pink-text">This text will be pink</p>
+    	<p class="red-text">This will not</p>
+    </div>
+
+Child selector
+--------------
+Selects all elements that direct descendant to an element, ergo a child
+
+    .navigation > h1 {
+    	margin: 40px;
+    }
+
+    <div class="nevigation">
+    	<h1>Item level 1>
+    	<div>
+    		<h1>Item level 2>
+    	</div>
     </div>
 
 /*ELEMENT ELEMENT SELECTOR, DECENDANT SELECTOR */
