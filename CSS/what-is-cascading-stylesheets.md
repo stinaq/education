@@ -20,21 +20,27 @@ There are 3 ways to write your CSS, and they are ordered here by the strongest f
 
 1. **Inline style**. This means writing the styling directly in the HTML element. This will always win over the following two ways, but is strongly discouraged, since it is very hard to maintain 
 
-    ```<body>
+    ```
+    <body>
         <h1 style="text-align:center;">Center-aligned heading</h1>
-    </body>```
+    </body>
+    ```
 
 2. **Internal stylesheet**. In the ```<head>``` tag of your HTML document you can have a ```<style>``` tag where CSS can be written. Still rather unpractical to maintain in the long run, but can sometimes be used if you want to style only a specific page
 
-    ```<head>
+    ```
+    <head>
         <style>
             body {background-color:yellow;}
             p {color:blue;}
         </style>
-    </head>```
+    </head>
+    ```
 
 3. **External stylesheet**. The most common way to write CSS. An external document is specified in the ```<head>``` tag and the styling therein will be applied to all documents where the external document is specified. Will loose to all the other 3 in the specificity war.
 
-    ```<head>
+    ```
+    <head>
         <link rel="stylesheet" type="text/css" href="mystyle.css">
-    </head>```
+    </head>
+    ```
