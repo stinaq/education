@@ -26,7 +26,7 @@ There are 3 ways to write your CSS, and they are ordered here by the strongest f
     </body>
     ```
 
-2. **Internal stylesheet**. In the ```<head>``` tag of your HTML document you can have a ```<style>``` tag where CSS can be written. Still rather unpractical to maintain in the long run, but can sometimes be used if you want to style only a specific page
+2. **Internal stylesheet**. A tag in the html document, preferably in the ```<head>``` tag of your HTML document. Still rather unpractical to maintain in the long run, but can sometimes be used if you want to style only a specific page
 
     ```
     <head>
@@ -37,7 +37,7 @@ There are 3 ways to write your CSS, and they are ordered here by the strongest f
     </head>
     ```
 
-3. **External stylesheet**. The most common way to write CSS. An external document is specified in the ```<head>``` tag and the styling therein will be applied to all documents where the external document is specified. Will loose to all the other 3 in the specificity war.
+3. **External stylesheet**. The most common way to write CSS. An external document is specified in the ```<head>``` tag and the styling therein will be applied to all documents where the external document is specified. Depending on which of the number 2 or 3 appears last in the document, that is the one that will be applied.
 
     ```
     <head>

@@ -1,0 +1,68 @@
+
+h1 {
+    color: violet;
+}
+
+input {
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+p::after {
+    content: "Here is an ::after element";
+    color: red;
+    text-decoration: line-through;
+    font-weight: bold;
+    border-left: 5px dotted red;
+    padding: 40px;
+}
+
+[type="button"] {
+    padding: 20px;
+    background: pink;
+}
+
+.class-selector {
+    color: white;
+    background: black;
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+li:first-child {
+    color: green;
+}
+
+li:last-child {
+    color: blue;
+}
+
+li:nth-of-type(3) {
+    color: red;
+}
+
+#id-selector {
+    padding: 60px;
+    background: violet;
+}
+
+div li {
+    font-size: 22px;
+    color: silver;
+}
+
+div > li {
+    color: pink;
+}
+
+.a-child-selector > ul li {
+    color: orange;
+}
