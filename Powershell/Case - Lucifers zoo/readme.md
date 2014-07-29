@@ -13,7 +13,7 @@ Look through the folder that Mildred sent. There she has recorded when she saved
 * In the folder structure beginning with the folder Magical Creatures is a folder for each creature. Creatures are grouped by their abilities and the folders are arranged hierarchically.
 * In each folder that corresponds to an actual creature is a text document (creatureinformation.txt). This document contains which individuals she’s looking to hand over to the zoo, what they are called and when she befriended them.
 * The document also contains information on how evil the creatures are (The fact is actually that none of them are evil, they are just scared of force relocation to Lucifer, but you shouldn’t worry about that)
-* There is sometimes also a text document in the folder (description.txt) where you can find description of the creature. Somehow this document is filled with #-signs (Mildred has misunderstood tagging).
+* There is sometimes also a text document in the folder (description.txt) where you can find description of the creature. Somehow this document is filled with #-signs (Mildred has misunderstood tagging). For some unknown reason the text alsom sometimes has this: [1], where the number can be any number.
 
 What Lucifer wants you to do
 ------------------------------
@@ -24,5 +24,5 @@ What Lucifer wants you to do
   * How evil they are
   * What they are called
   * When they were befriended
-* Add the text from the description.txt to the description of the site. Remove all the #-signs.
+* Add the text from the description.txt to the description of the site. Remove all the #-signs, and the [1]
 * Do it all with powershell!
