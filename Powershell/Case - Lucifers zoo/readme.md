@@ -20,8 +20,8 @@ What Lucifer wants you to do
 * For each of the folders, create a sub site to Magical Creatures, following the same hierarchy that the folders have
 * On each site corresponding to a creature, create a list called “Creature Information”.
 * Parse the document with the creature information, and for each creature found in the document, create a list item in the list. This item should include:
-o	How evil they are
-o	What they are called
-o	When they were befriended
-•	Add the text from the description.txt to the description of the site. Remove all the #-signs.
-•	Do it all with powershell!
+  * How evil they are
+  * What they are called
+  * When they were befriended
+* Add the text from the description.txt to the description of the site. Remove all the #-signs.
+* Do it all with powershell!
