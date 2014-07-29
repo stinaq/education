@@ -8,17 +8,18 @@ But, he has an idea! He heard that his new, underpaid caretaker (you) is actuall
 This is what you have to work with
 --------------------------------
 Look through the folder that Mildred sent. There she has recorded when she saved the creatures, what they are called and which individuals each species contains.
-    * In the folder structure beginning with the folder Magical Creatures is a folder for each creature. Creatures are grouped by their abilities and the folders are arranged hierarchically.
-    * In each folder that corresponds to an actual creature is a text document (creatureinformation.txt). This document contains which individuals she’s looking to hand over to the zoo, what they are called and when she befriended them.
-    * The document also contains information on how evil the creatures are (The fact is actually that none of them are evil, they are just scared of force relocation to Lucifer, but you shouldn’t worry about that)
-    * There is sometimes also a text document in the folder (description.txt) where you can find description of the creature. Somehow this document is filled with #-signs (Mildred has misunderstood tagging).
+
+* In the folder structure beginning with the folder Magical Creatures is a folder for each creature. Creatures are grouped by their abilities and the folders are arranged hierarchically.
+* In each folder that corresponds to an actual creature is a text document (creatureinformation.txt). This document contains which individuals she’s looking to hand over to the zoo, what they are called and when she befriended them.
+* The document also contains information on how evil the creatures are (The fact is actually that none of them are evil, they are just scared of force relocation to Lucifer, but you shouldn’t worry about that)
+* There is sometimes also a text document in the folder (description.txt) where you can find description of the creature. Somehow this document is filled with #-signs (Mildred has misunderstood tagging).
 
 What Lucifer wants you to do
 ------------------------------
-•	Create a site collection called “Magical Creatures”
-•	For each of the folders, create a sub site to Magical Creatures, following the same hierarchy that the folders have
-•	On each site corresponding to a creature, create a list called “Creature Information”.
-•	Parse the document with the creature information, and for each creature found in the document, create a list item in the list. This item should include:
+* Create a site collection called “Magical Creatures”
+* For each of the folders, create a sub site to Magical Creatures, following the same hierarchy that the folders have
+* On each site corresponding to a creature, create a list called “Creature Information”.
+* Parse the document with the creature information, and for each creature found in the document, create a list item in the list. This item should include:
 o	How evil they are
 o	What they are called
 o	When they were befriended
