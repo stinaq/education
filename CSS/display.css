@@ -1,0 +1,65 @@
+
+
+.wrapper {
+	background: #A3EEF7;
+}
+
+.inner-wrapper {
+	float: none;
+}
+
+
+
+.test-display {
+	background: #FFB5ED;
+	display: table;
+	border: 1px solid #757575;
+	padding: 40px;
+	width: 600px;
+	height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix:after,
+.clearfix:before {
+	content: " ";
+	display: table;
+}
