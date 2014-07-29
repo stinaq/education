@@ -1,10 +1,11 @@
 Mildred’s Magical Creatures moving to Lucifer’s Crowded Zoo
 ===========================================================
 
-Here’s the deal: Mildred has a lot of magical creatures. In fact, her house is filled with them. Chimaeras in the cellar, sphinxes in the back yard, and mermaids in the bathtub, making it really hard for her to do anything at all.
+Here’s the deal: Mildred has a lot of magical creatures. In fact, her house is filled with them. Chimaeras in the cellar, sphinxes in the back yard, and mermaids in the bathtub, making it really hard for her to do anything at all.  
+
 So now she’s looking in to sending them all to the zoo. The zoo keeper Lucifer at Crowded Zoo likes the idea of showing magical creatures. They haven’t had any before, mostly because nobody knew the existed. But he’s a bit on the fence, because it would mean so much extra paper work. The zoo keeps track of all its animals in a SharePoint site. Each type of animal has its own site, where Lucifer records information about individuals, how they are doing and how cost effective they are. Bringing in so many new types of creatures would mean that he has to spend time with SharePoint, which he doesn’t like, at all.  
 
-But, he has an idea! He heard that his new, underpaid caretaker (you) is actually a SharePoint genius, and he thinks: this can be exploited. And think of all the money he can make, once the magical creatures are on display.
+But, Lucifer has an idea! He heard that his new, underpaid caretaker (you) is actually a SharePoint genius, and he thinks: this can be exploited. And think of all the money he can make, once the magical creatures are on display.
 This is what you have to work with
 --------------------------------
 Look through the folder that Mildred sent. There she has recorded when she saved the creatures, what they are called and which individuals each species contains.
