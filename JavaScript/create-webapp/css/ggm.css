@@ -1,0 +1,50 @@
+body {
+  background: radial-gradient(#F26455, #e74c3c) repeat scroll 0% 0% transparent;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.step {
+	font-family: 'Raleway', sans-serif;
+}
+
+#title h1{
+  font-size: 80px
+}
+
+#title p{
+  font-size: 40px;
+}
+
+#big {
+  width: 900px;
+}
+
+#cats {
+  width: 700px;
+}
+
+#borjar {
+  width: 700px;
+}
+
+#get p {
+  font-size: 44px;
+}
+
+#help .small {
+  font-size: 24px;
+}
+
+#need .list{
+  font-size: 34px;
+}
+
+#kitten-paus img {
+  max-width: 350px;
+}
+
+#step-1 h1{
+  font-size: 70px;
+}
