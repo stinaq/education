@@ -1,4 +1,9 @@
 education
 =========
-This is a repo to gather all my educational presentations and assets
-Feel free to use!
+This repo contains educational assets to use for learning programming.
+
+Licensed under MIT.
+
+Contributors
+------------
+Stina Qvarnström
