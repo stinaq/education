@@ -1,0 +1,48 @@
+h1 {
+  font-family: comic-sans;
+  text-align: center;
+}
+
+div {
+  width: 50%;
+  height: 50px;
+  background: lightblue;
+  border: 1px solid blue;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.left-side {
+  width: 30%;
+  background: #e74c3c;
+  border: 1px solid #D14132;
+}
+
+.middle {
+  width: 70%;
+  background: #27ae60;
+  border: 1px solid #248F51;
+}
+
+.layout {
+  margin: 0;
+  float: left;
+  border-radius: 0;
+  height: 170px;
+  color: white;
+}
+
+#left {
+  background: #6D52BF;
+  border-color: #5B35CC;
+}
+
+#middle {
+  background: #A35CBF;
+  border-color: #9538BA;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
