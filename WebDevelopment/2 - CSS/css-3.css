@@ -1,0 +1,16 @@
+/*The element selector */
+p {
+  background: red;
+}
+
+.paragraphs {
+  background: green;
+}
+
+#a-paragraph {
+  background: blue;
+}
+
+.important-paragraph {
+  background: pink !important;
+}

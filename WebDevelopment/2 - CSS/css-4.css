@@ -1,0 +1,17 @@
+.parent {
+  display: flex;
+  align-items: center;
+}
+
+.child {
+  height: 80px;
+  flex: 1;
+  background: lightblue;
+  border: 1px solid blue;
+  margin: 0 20px;
+}
+
+.special {
+  flex: 3;
+  background: pink;
+}
