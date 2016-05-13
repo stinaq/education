@@ -12,12 +12,12 @@ The slides from the lecture can [be found here](https://docs.google.com/presenta
 In it, write:
 
     <html>
-    <head>
-        <title>Web Development</title>
-    </head>
-    <body>
-        <h1>The first web page I created</h1>
-    </body>
+        <head>
+            <title>Web Development</title>
+        </head>
+        <body>
+            The first web page I created
+        </body>
     </html>
 
 * Save the file
