@@ -261,7 +261,7 @@ There are a few ways to combine rules, but the most common ways are:
     div p .pink-button
 ```
 
-Any element with the class `pink-button that somewhere has an ancestor that’s a `p`, which in turn has an ancestor that’s a `div`.
+Any element with the class `pink-button` that somewhere has an ancestor that’s a `p`, which in turn has an ancestor that’s a `div`.
 
 * “Combination”
 ```
