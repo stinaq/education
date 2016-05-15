@@ -129,7 +129,7 @@ The cascading part of Cascading Style Sheets means that rules can be overwritten
   * Examples of this in folder 2, CSS-2.html
 2. Selector specificity
 
-
+```
     body {
       background: blue;
     }
@@ -137,6 +137,7 @@ The cascading part of Cascading Style Sheets means that rules can be overwritten
     body {
       background: red;
     }
+```
 
 Which will win?
 
@@ -156,12 +157,13 @@ CSS has a few ways to target different HTML elements, and they have different �
 * Targets the name of an HTML element
 * For example:
 
-
+```
     p, h1, img, button, section, div
 
     p {
         margin-left: 20px;
     }
+```
 
 * Not very strong and influential, will lose to all the others
 
@@ -170,10 +172,11 @@ CSS has a few ways to target different HTML elements, and they have different �
 * Targets the class or attribute
 * For example:
 
-
+```
     .my-button {
         padding: 20px
     }
+```
 
 * Has some influence and some saying
 * Will always win over element selector
@@ -184,10 +187,11 @@ CSS has a few ways to target different HTML elements, and they have different �
 * Only one element of a page should have a certain ID
 * For example:
 
-
+```
     #login-button {
         border-color: #000;
     }
+```
 
 * Will always win over the two previous
 
@@ -197,8 +201,9 @@ CSS has a few ways to target different HTML elements, and they have different �
 * Should not be spoken of or used 
 * Example:
 
-
+```
     <h1 style=”color: green”>Hello</h1>
+```
 
 ## CSS - The special selector that wins all
 
@@ -208,10 +213,11 @@ CSS has a few ways to target different HTML elements, and they have different �
 * !important
 * Example:
 
-
-    `p .another-color {
+```
+    p .another-color {
         color: red !important;
-    }`
+    }
+```
 
 ## CSS - Inheritance
 
@@ -225,31 +231,42 @@ So styles can be inherited
 
 Rules can be combined, usually because you want to be more specific.
 
-    p { margin-top: 30px; margin-left: 40px; }
+```
+    p { 
+        margin-top: 30px; margin-left: 40px;
+    }
+```
 
 Will “hit” all paragraph tags and change the margin of those
 
-    div p { margin-top: 70px; }
+```
+    div p {
+        margin-top: 70px;
+    }
+```
 
 Will hit all paragraphs inside that have a div as an ancestor
-
-    p.no-top-margin { margin: 0px; }
+```
+    p.no-top-margin {
+        margin: 0px;
+    }
+```
 
 Will hit all paragraphs with the class “no-top-margin”
 
 There are a few ways to combine rules, but the most common ways are:
 
 * Descendant
-
-
+```
     div p .pink-button
+```
 
 Any element with the class `pink-button that somewhere has an ancestor that’s a `p`, which in turn has an ancestor that’s a `div`.
 
 * “Combination”
-
-
+```
     img.tiny-image
+```
 
 Any element that is an image and also has the class `tiny-image`
 It’s the space between the rules that makes the difference
