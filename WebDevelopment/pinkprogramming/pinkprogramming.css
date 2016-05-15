@@ -1,0 +1,18 @@
+.parent {
+  background-color: lightblue;
+  border: 1px solid blue;
+  padding: 20px;
+  display: flex;
+}
+
+.child .larger {
+  flex: 2;
+}
+
+.parent .child{
+  background-color: pink;
+  border: 1px solid red;
+  height: 50px;
+  flex: 1;
+}
+
