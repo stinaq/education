@@ -110,10 +110,13 @@ Creating a HTML document with a connected CSS document (found in folder 2, calle
 * Create an HTML document and save it like before
 * Inside the <head> tag, link a CSS document
 
+
     <link rel="stylesheet" type="text/css" href="css-1.css">
+
 
 * Create a CSS document called css-1.css
 * Style the background of the page by writing:
+
 
     body { background-color: pink }
 
@@ -125,6 +128,7 @@ The cascading part of Cascading Style Sheets means that rules can be overwritten
   * `body {color: blue}` at line 1 will be overwritten by `body {color: red}` on line 4 in a document
   * Examples of this in folder 2, CSS-2.html
 2. Selector specificity
+
 
     body {
       background: blue;
@@ -152,6 +156,7 @@ CSS has a few ways to target different HTML elements, and they have different ‚Ä
 * Targets the name of an HTML element
 * For example:
 
+
     p, h1, img, button, section, div
 
     p {
@@ -164,6 +169,7 @@ CSS has a few ways to target different HTML elements, and they have different ‚Ä
 
 * Targets the class or attribute
 * For example:
+
 
     .my-button {
         padding: 20px
@@ -178,6 +184,7 @@ CSS has a few ways to target different HTML elements, and they have different ‚Ä
 * Only one element of a page should have a certain ID
 * For example:
 
+
     #login-button {
         border-color: #000;
     }
@@ -190,6 +197,7 @@ CSS has a few ways to target different HTML elements, and they have different ‚Ä
 * Should not be spoken of or used 
 * Example:
 
+
     <h1 style=‚Äùcolor: green‚Äù>Hello</h1>
 
 ## CSS - The special selector that wins all
@@ -200,13 +208,14 @@ CSS has a few ways to target different HTML elements, and they have different ‚Ä
 * !important
 * Example:
 
-    p .another-color {
+
+    `p .another-color {
         color: red !important;
-    }
+    }`
 
 ## CSS - Inheritance
 
-The real strength of CSS, rules can be inherited (example in folder 2, CSS-4
+The real strength of CSS, rules can be inherited (example in folder 2, CSS-4)
 
 A style given by one rule will hit all specified elements, and only the style that‚Äôs specifically overwritten will be changed
 
@@ -232,11 +241,13 @@ There are a few ways to combine rules, but the most common ways are:
 
 * Descendant
 
+
     div p .pink-button
 
 Any element with the class `pink-button that somewhere has an ancestor that‚Äôs a `p`, which in turn has an ancestor that‚Äôs a `div`.
 
 * ‚ÄúCombination‚Äù
+
 
     img.tiny-image
 
