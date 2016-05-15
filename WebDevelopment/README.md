@@ -111,14 +111,14 @@ Creating a HTML document with a connected CSS document (found in folder 2, calle
 * Inside the <head> tag, link a CSS document
 
 
-    <link rel="stylesheet" type="text/css" href="css-1.css">
+    `<link rel="stylesheet" type="text/css" href="css-1.css">`
 
 
 * Create a CSS document called css-1.css
 * Style the background of the page by writing:
 
 
-    body { background-color: pink }
+    `body { background-color: pink }`
 
 ## CSS - cascading?
 
