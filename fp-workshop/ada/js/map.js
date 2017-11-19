@@ -1,5 +1,3 @@
-const ada = {};
-
 function map(originalArray, callback) {
   let newArray = [];
   originalArray.forEach(function(item, index) {
@@ -8,4 +6,4 @@ function map(originalArray, callback) {
   return newArray;
 }
 
-ada.map = map;
+Ada.map = map;
