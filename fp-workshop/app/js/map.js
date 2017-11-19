@@ -3,10 +3,9 @@ const ada = {};
 function map(originalArray, callback) {
   let newArray = [];
   originalArray.forEach(function(item, index) {
-    originalArray[index] = callback(item);
-    // newArray.push(callback(item));
+    newArray.push(callback(item));
   });
-  return originalArray;
+  return newArray;
 }
 
 ada.map = map;
