@@ -1,9 +1,10 @@
 describe("Map", function() {
   describe('basic functionality', () => {
     let result;
-    const mockFunction = jasmine.createSpy('mockFunction');
+    let mockFunction;
     const startArray = ['Diana', 'Hippolyta'];
     beforeEach(() => {
+      mockFunction = jasmine.createSpy('mockFunction');
       result = Ada.map(startArray, mockFunction);
     });
     it('should return an array', () => {
@@ -18,17 +19,23 @@ describe("Map", function() {
   });
   describe('given an array of length 3', function() {
     let result;
-    const mockFunction = jasmine.createSpy('mockFunction');
-    const startArray = ['Ada Lovelace', 'Margeret Hamilton', 'Grace Hopper'];
+    let mockFunction;
+    const startArray = ['Ada Lovelace', 'Margaret Hamilton', 'Grace Hopper'];
     beforeEach(() => {
+      mockFunction = jasmine.createSpy('mockFunction');
       result = Ada.map(startArray, mockFunction);
     });
     it('should call the callback function 3 times', () => {
       expect(mockFunction.calls.count()).toEqual(3);
-    });  
+    });
+    it('should call callback with the correct arguments, in the correct order', () => {
+      expect(mockFunction.calls.argsFor(0)).toEqual(['Ada Lovelace']);
+      expect(mockFunction.calls.argsFor(1)).toEqual(['Margaret Hamilton']);
+      expect(mockFunction.calls.argsFor(2)).toEqual(['Grace Hopper']);
+    });
     it('should return an array as long as the one given', () => {
       expect(result.length).toEqual(3);
-    }); 
+    });
   });
   describe('given a callback that increases the numbers by 2 ', () => {
     let result;

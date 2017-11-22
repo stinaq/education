@@ -1,4 +1,4 @@
-fdescribe('Reduce', function() {
+describe('Reduce', function() {
   describe('basic functionality', function() {
     it('should call callback function as many times as array is long', function() {
       const startArray = [1, 3, 5];
