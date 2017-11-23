@@ -5,7 +5,7 @@ describe('Filter', () => {
     const startArray = ['Hermione', 'Luna'];
     beforeEach(() => {
       mockCallback = jasmine.createSpy('mockCallback');
-      result = Ada.filter(startArray, mockCallback);
+      result = filter(startArray, mockCallback);
     });
     it('should return an array', () => {
       expect(result).toEqual(jasmine.any(Array));
@@ -28,7 +28,7 @@ describe('Filter', () => {
       const callback = function(item) {
         return item;
       };
-      result = Ada.filter(startArray, callback);
+      result = filter(startArray, callback);
     });
     it('should return an array that looks like the original', () => {
       expect(result).toEqual(['Buffy', 'Willow']);
@@ -47,7 +47,7 @@ describe('Filter', () => {
       const callback = function (item) {
         return item > 10;
       };
-      result = Ada.filter(startArray, callback);
+      result = filter(startArray, callback);
     });
     it('should return the correct numbers', () => {
       expect(result).toEqual([80, 11, 17]);
@@ -76,7 +76,7 @@ describe('Filter', () => {
       const callback = function (item) {
         return item.isPony === true;
       };
-      result = Ada.filter(startArray, callback);
+      result = filter(startArray, callback);
     });
     it('should return the correct objects', () => {
       expect(result).toEqual([

@@ -5,5 +5,3 @@ function map(originalArray, callback) {
   });
   return newArray;
 }
-
-Ada.map = map;

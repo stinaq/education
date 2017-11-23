@@ -5,7 +5,7 @@ describe("Map", function() {
     const startArray = ['Diana', 'Hippolyta'];
     beforeEach(() => {
       mockFunction = jasmine.createSpy('mockFunction');
-      result = Ada.map(startArray, mockFunction);
+      result = map(startArray, mockFunction);
     });
     it('should return an array', () => {
       expect(result).toEqual(jasmine.any(Array));
@@ -23,7 +23,7 @@ describe("Map", function() {
     const startArray = ['Ada Lovelace', 'Margaret Hamilton', 'Grace Hopper'];
     beforeEach(() => {
       mockFunction = jasmine.createSpy('mockFunction');
-      result = Ada.map(startArray, mockFunction);
+      result = map(startArray, mockFunction);
     });
     it('should call the callback function 3 times', () => {
       expect(mockFunction.calls.count()).toEqual(3);
@@ -44,7 +44,7 @@ describe("Map", function() {
     }
     const startArray = [2, 5, 7, 9, 6];
     beforeEach(() => {
-      result = Ada.map(startArray, increaserCallback);
+      result = map(startArray, increaserCallback);
     });
     it('should return an array where the callback has been applied to each item in the array', () => {
       const expectedResult = [4, 7, 9, 11, 8];
@@ -58,7 +58,7 @@ describe("Map", function() {
     };
     const startArray = [38000, 45000];
     beforeEach(() => {
-      result = Ada.map(startArray, salaryIncreaser);
+      result = map(startArray, salaryIncreaser);
     });
     it('should not return the same array as given', () => {
       expect(result).not.toBe(startArray);

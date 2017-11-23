@@ -10,5 +10,3 @@ function reduce(originalArray, callback, initialValue) {
 
   return result;
 }
-
-Ada.reduce = reduce;

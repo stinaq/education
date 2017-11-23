@@ -3,7 +3,7 @@ describe('Reduce', function() {
     it('should call callback function as many times as array is long', function() {
       const startArray = [1, 3, 5];
       const mockCallback = jasmine.createSpy('mockFunction');
-      const result = Ada.reduce(startArray, mockCallback, 0);
+      const result = reduce(startArray, mockCallback, 0);
       expect(mockCallback.calls.count()).toEqual(3);
     });
   });
@@ -12,7 +12,7 @@ describe('Reduce', function() {
       it('should return the initial value', () => {
         const startArray = [1];
         const emptyCallback = function (item) { return item };
-        const result = Ada.reduce(startArray, emptyCallback, 0);
+        const result = reduce(startArray, emptyCallback, 0);
         expect(result).toEqual(0);
       });
     });
@@ -23,7 +23,7 @@ describe('Reduce', function() {
           const sumCallback = function(accumulator, item) {
             return accumulator + item;
           };
-          const result = Ada.reduce(startArray, sumCallback, 0);
+          const result = reduce(startArray, sumCallback, 0);
           expect(result).toEqual(6);
         });
       });

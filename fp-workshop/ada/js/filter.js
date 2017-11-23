@@ -8,5 +8,3 @@ function filter(originalArray, callback) {
 
   return result;
 }
-
-Ada.filter = filter;
